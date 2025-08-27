@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JomBite - MainPage</title>
+    <meta name="description"
+        content="Discover the best Malaysian street food from every corner of the country. Experience authentic flavors and culinary traditions.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/mainpage.css">
+    <link rel="icon" type="image/x-icon" href="../images/fff.ico">
+</head>
+
+<body>
+
+<header class="mainpageHeader">
+    <nav class="navbar navbar-expand-lg" style="background-color:#701705; min-height:80px;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+
+            <a class="navbar-brand d-lg-none" href="#">
+                <img src="../images/jombitelogo.png" alt="JomBite Logo" width="100px" height="100px"
+                    class="rounded-circle">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="w-100 d-lg-flex justify-content-between align-items-center">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white"
+                                href="../html/bestfood2025.html">Street Food 2025</a></li>
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white"
+                                href="../html/gaouritefood.html">Most Favourite</a></li>
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white"
+                                href="../html/ranking.html">Rankings</a></li>
+
+                        <li class="nav-item mx-lg-3 dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Reviews
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                                <li><a class="dropdown-item" href="../html/restaurant-review.html">Restaurant
+                                        Reviews</a></li>
+                                <li><a class="dropdown-item" href="../html/food-review.html">Food Reviews</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a class="navbar-brand d-none d-lg-block" href="../html/mainpage.html">
+                        <img src="../images/jombitelogo.png" alt="JomBite Logo" width="120px" height="120px"
+                            style="margin-top:4vw;" class="rounded-circle">
+                    </a>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/foodblog.html">Food
+                                Blogs</a></li>
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white"
+                                href="../html/promotional.html">Miscellaneous Promotion</a></li>
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/about.html">About
+                                Us</a></li>
+                        <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/login.html"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="video-fullscreen-container" style="z-index: -10;" aria-label="Introduction Video">
+    <video autoplay muted loop playsinline aria-label="JomBite Introduction Video">
+        <source src="../videos/introductionVideo.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+    <div class="video-overlay" aria-hidden="true"></div>
+    <div class="scroll-up-wrapper" role="button" tabindex="0" aria-label="Scroll to next section">
+        <div class="scroll-up-arrow" aria-hidden="true">⬆</div>
+        <div class="scroll-up-text">Scroll Up</div>
+    </div>
+</section>
+
+<section class="container my-5 simpleBrief" style="min-height: 100vh;" id="main-content">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start" style="width:700px">
+            <div class="display-4 fw-bold" style="margin-top: 100px;">
+                <img src="../images/ambientdining.png" alt="Ambient Dining Experience" class="img-fluid title-img">
+            </div>
+            <p class="mt-5 lead" style="text-align: justify;">
+                Experience the rich and diverse flavors of Malaysian street food from every corner of the country. From
+                the smoky aroma of grilled satay in the bustling night markets of Kuala Lumpur to the savory tang of
+                Penang's famous char kuey teow, every bite tells a story of tradition, culture, and passion.
+            </p>
+            <p class="lead" style="text-align: justify;">
+                Dive into the culinary treasures of Malaysia — a melting pot of Malay, Chinese, Indian,and indigenous
+                influences — where every dish offers a taste of heritage and a journey through generations of flavor.
+            </p>
+            <div class="mt-4 d-flex flex-column flex-lg-row gap-3 align-items-center">
+                <a href="../html/bestfood2025.html" class="btn btn-danger px-4 py-2 fw-semibold rounded simple-btn"
+                    role="button">
+                    Best Food 2025
+                </a>
+                <a href="../html/restaurant-review.html" class="btn btn-danger px-4 py-2 fw-semibold rounded simple-btn"
+                    role="button">
+                    Street Food Review
+                </a>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-4 position-relative text-center mt-5 mt-lg-0 ms-auto">
+            <img src="../images/foodimage.png" class="img-fluid main-food" alt="Traditional Malaysian Laksa Bowl"
+                style="margin-left: -50px;">
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 review-section" id="reviews">
+    <h2 class="text-center fw-bold mb-4">Customer Reviews</h2>
+    <div class="row g-3" id="reviews-container">
+        <div class="col-12 text-center">
+            <div class="loading-spinner">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading reviews...</span>
+                </div>
+                <p class="mt-2 text-muted">Loading customer reviews...</p>
+            </div>
+        </div>
+    </div>
+    <div id="review-pagination" class="mt-4"></div>
+</section>
+
+<section class="restaurant-section" id="restaurants">
+    <h2 class="restaurant-title">Top Restaurant Picks</h2>
+    <div class="restaurant-carousel">
+        <div class="restaurant-track">
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Restoran Sedap Giler Logo" class="restaurant-logo">
+                </div>
+                <h3>Restoran Sedap Giler</h3>
+                <p>Famous for spicy nasi lemak & crispy fried chicken.</p>
+                <div class="restaurant-stars" aria-label="5 stars rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Warung Pak Ali Logo" class="restaurant-logo">
+                </div>
+                <h3>Warung Pak Ali</h3>
+                <p>Authentic Malay dishes with kampung vibes.</p>
+                <div class="restaurant-stars" aria-label="4 stars rating">⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Mama Thai Street Logo" class="restaurant-logo">
+                </div>
+                <h3>Mama Thai Street</h3>
+                <p>Delicious Thai boat noodles & mango sticky rice.</p>
+                <div class="restaurant-stars" aria-label="5 stars rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Uncle John Burger Logo" class="restaurant-logo">
+                </div>
+                <h3>Uncle John Burger</h3>
+                <p>Juicy homemade burgers with secret sauce.</p>
+                <div class="restaurant-stars" aria-label="4 stars rating">⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Kopi-Kopi Café Logo" class="restaurant-logo">
+                </div>
+                <h3>Kopi-Kopi Café</h3>
+                <p>Chill spot for lattes, cakes & brunch vibes.</p>
+                <div class="restaurant-stars" aria-label="5 stars rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Sushi Go Round Logo" class="restaurant-logo">
+                </div>
+                <h3>Sushi Go Round</h3>
+                <p>Fresh sushi delivered on rotating belts and ori rice from Japan.</p>
+                <div class="restaurant-stars" aria-label="5 stars rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Tandoori House Logo" class="restaurant-logo">
+                </div>
+                <h3>Tandoori House</h3>
+                <p>Authentic Indian curries & tandoori platters.</p>
+                <div class="restaurant-stars" aria-label="4 stars rating">⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Hotpot Paradise Logo" class="restaurant-logo">
+                </div>
+                <h3>Hotpot Paradise</h3>
+                <p>All-you-can-eat hotpot with premium seafood.</p>
+                <div class="restaurant-stars" aria-label="5 stars rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="restaurant-card">
+                <div class="restaurant-image" style="background-image: url('../images/resturant.png');">
+                    <img src="../images/tt.png" alt="Pasta di Roma Logo" class="restaurant-logo">
+                </div>
+                <h3>Pasta di Roma</h3>
+                <p>Italian pastas cooked with love & cheese.</p>
+                <div class="restaurant-stars" aria-label="4 stars rating">⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <img src="../images/jombitelogo.png" alt="JomBite Logo" class="footer-logo">
+        <p>&copy; 2025 JomBite. All rights reserved.</p>
+        <nav class="footer-links" role="navigation" aria-label="Footer Navigation">
+            <a href="../html/about.html">About</a>
+            <a href="../html/about.html">Contact</a>
+            <a href="../html/about.html">Privacy</a>
+        </nav>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/mainpage.js"></script>
+<script src="../js/auth.js"></script>
+
+</body>
+</html>

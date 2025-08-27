@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JomBite - About Us</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mainpage.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="icon" type="image/x-icon" href="../images/fff.ico">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="mainpageHeader" style="z-index:1">
+    <nav class="navbar navbar-expand-lg" style="background-color:#701705; min-height:80px;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Mobile logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="../images/jombitelogo.png" alt="JomBite Logo" width="100px" height="100px" class="rounded-circle">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="w-100 d-lg-flex justify-content-between align-items-center">
+
+            <!-- Left navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/bestfood2025.html">Street Food
+                  2025</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/gaouritefood.html">Most
+                  Favourite</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/ranking.html">Rankings</a></li>
+
+              <!-- Reviews dropdown -->
+              <li class="nav-item mx-lg-3 dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                  <li><a class="dropdown-item" href="../html/restaurant-review.html">Restaurant Reviews</a></li>
+                  <li><a class="dropdown-item" href="../html/food-review.html">Food Reviews</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Center logo -->
+            <a class="navbar-brand d-none d-lg-block" href="../html/mainpage.html">
+              <img src="../images/jombitelogo.png" alt="JomBite Logo" width="120px" height="120px"
+                style="margin-top:4vw;" class="rounded-circle">
+            </a>
+
+            <!-- Right navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/foodblog.html">Food Blogs</a>
+              </li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/promotional.html">Miscellaneous
+                  Promotion</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/about.html">About Us</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/login.html"></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="fw-bold">About <span class="highlight">JomBite</span></h1>
+      <p class="lead">Connecting food lovers with unforgettable street food experiences</p>
+    </div>
+    <img src="../images/hero-food.avif" alt="Delicious Street Food" class="hero-image">
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">Who We Are</h2>
+        <p>At <span class="highlight">JomBite</span>, we’re passionate about bringing the best local food
+          experiences closer to you. Our mission is to make food exploration exciting,
+          authentic, and community-driven.</p>
+        <p>Whether you’re hunting hidden gems or sharing your favorite food stalls,
+          JomBite makes every food journey special.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../images/about-team.jpg" class="img-fluid rounded shadow" alt="Our Team">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section py-5 text-center text-white">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Our Mission</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-dark text-white p-4 shadow h-100">
+            <i class="bi bi-heart-fill display-5 mb-3 text-danger"></i>
+            <h5 class="fw-bold">Love for Food</h5>
+            <p>We celebrate street food culture and the passion behind every dish.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-white p-4 shadow h-100">
+            <i class="bi bi-people-fill display-5 mb-3 text-primary"></i>
+            <h5 class="fw-bold">Community First</h5>
+            <p>Food is better when shared — we connect people through food stories.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-white p-4 shadow h-100">
+            <i class="bi bi-globe2 display-5 mb-3 text-success"></i>
+            <h5 class="fw-bold">Global Flavors</h5>
+            <p>Discover food experiences from every corner of the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="values-section container py-5 text-center">
+    <h2 class="fw-bold mb-4">Our Core Values</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="value-card p-4 shadow-sm h-100">
+          <i class="bi bi-award-fill display-6 text-warning mb-2"></i>
+          <h5 class="fw-bold">Authenticity</h5>
+          <p>We believe in genuine food reviews and real experiences.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card p-4 shadow-sm h-100">
+          <i class="bi bi-lightning-charge-fill display-6 text-danger mb-2"></i>
+          <h5 class="fw-bold">Innovation</h5>
+          <p>We constantly improve to make your food journey smoother.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card p-4 shadow-sm h-100">
+          <i class="bi bi-star-fill display-6 text-primary mb-2"></i>
+          <h5 class="fw-bold">Excellence</h5>
+          <p>We strive to provide top-notch user experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Meet Our Team</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="team-card shadow p-3">
+            <img src="../images/team1.png" class="rounded-circle mb-3" width="120" height="120" alt="Ang Zhong Kiat">
+            <h5 class="fw-bold">Ang Zhong Kiat</h5>
+            <p class="text-muted">Founder & CEO</p>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card shadow p-3">
+            <img src="../images/team2.png" class="rounded-circle mb-3" width="120" height="120" alt="Chiew Wei Xiang">
+            <h5 class="fw-bold">Chiew Wei Xiang</h5>
+            <p class="text-muted">Marketing Lead</p>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card shadow p-3">
+            <img src="../images/team3.png" class="rounded-circle mb-3" width="120" height="120" alt="Lee Ming Han">
+            <h5 class="fw-bold">Lee Ming Han</h5>
+            <p class="text-muted">Tech Lead</p>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card shadow p-3">
+            <img src="../images/team4.png" class="rounded-circle mb-3" width="120" height="120" alt="Yong Kai Cheng">
+            <h5 class="fw-bold">Yong Kai Cheng</h5>
+            <p class="text-muted">Content Manager</p>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section class="privacy-section py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Privacy Policy</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100">
+            <h5 class="fw-bold">Your Data is Safe</h5>
+            <p>We never share your personal information without consent.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100">
+            <h5 class="fw-bold">Secure Payments</h5>
+            <p>All transactions are encrypted and processed securely.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100">
+            <h5 class="fw-bold">Cookies & Preferences</h5>
+            <p>We use cookies to enhance your experience, and you can manage them anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="contact-section py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Feedback Form</h2>
+      <p class="mb-4">Have questions or feedback? We’d love to hear from you!</p>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-8">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Follow Us & Contact Info Section -->
+  <section class="follow-contact-section py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Follow Us & Contact</h2>
+      <p class="mb-3">Stay connected with us through social media or reach out directly!</p>
+
+      <!-- Social Media Links -->
+      <div class="mb-4">
+        <a href="#" class="social-link mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-link mx-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="social-link mx-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-link mx-2"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <p><i class="bi bi-telephone-fill"></i> +60 12-345 6789</p>
+        <p><i class="bi bi-envelope-fill"></i> info@jombite.com</p>
+        <p><i class="bi bi-geo-alt-fill"></i> 123 Food Street, Kuala Lumpur, Malaysia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <img src="../images/jombitelogo.png" alt="JomBite Logo" class="footer-logo">
+      <p>&copy; 2025 JomBite. All rights reserved.</p>
+      <nav class="footer-links" role="navigation" aria-label="Footer Navigation">
+        <a href="../html/about.html">About</a>
+        <a href="../html/about.html">Contact</a>
+        <a href="../html/about.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/about.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+
+</html>

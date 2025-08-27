@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Detail - JomBite</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mainpage.css">
+  <link rel="stylesheet" href="../css/restaurant-detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../images/fff.ico">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="mainpageHeader">
+    <nav class="navbar navbar-expand-lg" style="background-color:#701705; min-height:80px;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Mobile logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="../images/jombitelogo.png" alt="JomBite Logo" width="100px" height="100px" class="rounded-circle">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="w-100 d-lg-flex justify-content-between align-items-center">
+
+            <!-- Left navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/bestfood2025.html">Street Food
+                  2025</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/gaouritefood.html">Most
+                  Favourite</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/ranking.html">Rankings</a></li>
+
+              <!-- Reviews dropdown -->
+              <li class="nav-item mx-lg-3 dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                  <li><a class="dropdown-item" href="../html/restaurant-review.html">Restaurant Reviews</a></li>
+                  <li><a class="dropdown-item" href="../html/food-review.html">Food Reviews</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Center logo -->
+            <a class="navbar-brand d-none d-lg-block" href="../html/mainpage.html">
+              <img src="../images/jombitelogo.png" alt="JomBite Logo" width="120px" height="120px"
+                style="margin-top:4vw;" class="rounded-circle">
+            </a>
+
+            <!-- Right navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/foodblog.html">Food Blogs</a>
+              </li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/promotional.html">Miscellaneous
+                  Promotion</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/about.html">About Us</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/login.html"></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Restaurant Detail Content -->
+  <main class="container py-5">
+    <div class="restaurant-header text-center">
+      <h1 class="top-title text-center mb-4">Nasi Lemak Wanjo</h1>
+      <p class="text-muted fs-5">Best for Nasi Lemak Lovers 🌶️</p>
+    </div>
+
+
+    <div class="restaurant-info">
+      <img src="../images/Wanjo.png" alt="Restaurant Nasi Lemak Wanjo">
+
+      <div class="restaurant-details">
+        <h3>Hot Menu</h3>
+        <ul>
+          <li>Nasi Lemak Ayam Goreng</li>
+          <li>Nasi Lemak Sambal Sotong</li>
+          <li>Nasi Lemak Ayam Rendang</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          Nestled in the heart of Kampung Baru, Kuala Lumpur, Nasi Lemak Wanjo has been a legendary spot for locals and
+          travelers alike for decades. Known for its fragrant coconut rice, rich sambal, and a wide variety of
+          mouth-watering lauk (side dishes), this eatery serves up a true taste of Malaysian heritage. Whether you go
+          for the crispy ayam goreng, the tender rendang, or the spicy sambal sotong, every bite promises an explosion
+          of authentic flavors. With its bustling atmosphere and long queues that testify to its popularity, Wanjo is
+          more than just a meal—it’s a cultural experience you shouldn’t miss when in KL.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          📍 Address: 8, Jalan Raja Muda Musa, Kampung Baru, 50300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur <br>
+          📞 Phone: +6011-6336 1963 <br>
+          ✉️ Email: wanjohouse@gmail.com
+        </p>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <section class="food-gallery container">
+      <h2>🍲 Restaurant Specialties</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="../images/ayamgoreng.png" alt="Ayam Goreng">
+          <div class="gallery-caption">Nasi Lemak Ayam Goreng</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="../images/rendang.png" alt="rendang">
+          <div class="gallery-caption">Nasi Lemak Ayam Rendang</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="../images/sotong.png" alt="sotong">
+          <div class="gallery-caption">Nasi Lemak Sambal Sotong</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="../images/masakmerah.png" alt="masak merah">
+          <div class="gallery-caption">Nasi Lemak Ayam Masak Merah</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img id="modalImage" class="modal-image">
+    </div>
+
+    <!-- Map -->
+    <div class="map-container">
+      <h3>Location</h3>
+      <iframe class="map"
+        src="https://www.google.com/maps?q=8,+Jalan+Raja+Muda+Musa,+Kampung+Baru,+50300+Kuala+Lumpur,+Wilayah+Persekutuan+Kuala+Lumpur&output=embed"
+        width="100%" height="400" style="border-radius:10px;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+
+    <div class="text-center mt-4">
+      <a href="ranking.html" class="btn btn-danger">← Back to Rankings</a>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+
+<!-- Website Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <img src="../images/jombitelogo.png" alt="JomBite Logo" class="footer-logo">
+    <p>&copy; 2025 JomBite. All rights reserved.</p>
+    <nav class="footer-links" role="navigation" aria-label="Footer Navigation">
+      <a href="../html/about.html">About</a>
+      <a href="../html/about.html">Contact</a>
+      <a href="../html/about.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+</html>

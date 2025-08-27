@@ -1,0 +1,231 @@
+/* Hero Section Responsive */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 50vh;
+    padding: 2rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero-section>div {
+    z-index: 2;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p.lead {
+    font-size: 1rem;
+  }
+
+  .hero-section .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p.lead {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+section {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #701705;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero-section .btn {
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-section>div {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mission-section {
+  background: linear-gradient(to right, #701705, #a8321d);
+}
+
+.value-card,
+.team-card {
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover,
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+  border: 4px solid #701705;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: #701705;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #a8321d;
+}
+
+.site-footer {
+  background: #701705;
+  color: white;
+}
+
+.site-footer a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.privacy-section .card,
+.contact-section .form-control,
+.contact-section .btn {
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.privacy-section .card:hover,
+.contact-section .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-section .btn {
+  background-color: #701705;
+  border: none;
+  color: white;
+}
+
+.contact-section .btn:hover {
+  background-color: #a8321d;
+}
+
+/* Feedback Form Responsive */
+@media (max-width: 991px) {
+  .contact-section form .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-section form .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-section .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-section p {
+    font-size: 0.9rem;
+  }
+
+  .contact-section .form-control {
+    font-size: 0.9rem;
+  }
+
+  .contact-section .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.follow-contact-section {
+  text-align: center;
+}
+
+.follow-contact-section .social-link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.follow-contact-section .social-link:hover {
+  color: #ff7b00;
+  transform: scale(1.2);
+}
+
+.follow-contact-section .contact-info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.follow-contact-section .contact-info i {
+  margin-right: 8px;
+  color: #ff7b00;
+}

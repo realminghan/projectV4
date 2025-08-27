@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JomBite - Food Reviews</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mainpage.css">
+  <link rel="stylesheet" href="../css/review.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="../images/fff.ico">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="mainpageHeader">
+    <nav class="navbar navbar-expand-lg" style="background-color:#701705; min-height:80px;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Mobile logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="../images/jombitelogo.png" alt="JomBite Logo" width="100px" height="100px" class="rounded-circle">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="w-100 d-lg-flex justify-content-between align-items-center">
+
+            <!-- Left navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/bestfood2025.html">Street Food
+                  2025</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/gaouritefood.html">Most
+                  Favourite</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/ranking.html">Rankings</a></li>
+
+              <!-- Reviews dropdown -->
+              <li class="nav-item mx-lg-3 dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                  <li><a class="dropdown-item" href="../html/restaurant-review.html">Restaurant Reviews</a></li>
+                  <li><a class="dropdown-item" href="../html/food-review.html">Food Reviews</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Center logo -->
+            <a class="navbar-brand d-none d-lg-block" href="../html/mainpage.html">
+              <img src="../images/jombitelogo.png" alt="JomBite Logo" width="120px" height="120px"
+                style="margin-top:4vw;" class="rounded-circle">
+            </a>
+
+            <!-- Right navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/foodblog.html">Food Blogs</a>
+              </li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/promotional.html">Miscellaneous
+                  Promotion</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/about.html">About Us</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/login.html"></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center"
+    style="background: url('../images/food-hero.jpg') center/cover no-repeat; min-height: 55vh;">
+    <div>
+      <h1 class="fw-bold">Street Food Reviews</h1>
+      <p class="lead">Explore delicious dishes and read what the community thinks.</p>
+    </div>
+  </section>
+
+  <!-- Static Food Reviews -->
+  <section class="review-section container py-5">
+    <h2 class="fw-bold mb-4 text-center">Top Rated Dishes</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="../images/food1.jpg" class="card-img-top img-fluid" alt="Nasi Lemak">
+          <div class="card-body">
+            <h5 class="card-title">Nasi Lemak</h5>
+            <span class="badge bg-warning text-dark mb-2">Malay Cuisine</span>
+            <p class="card-text">Fragrant rice, sambal, and crispy anchovies – a Malaysian classic!</p>
+            <p class="text-warning mb-0">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="../images/food2.jpg" class="card-img-top img-fluid" alt="Char Kway Teow">
+          <div class="card-body">
+            <h5 class="card-title">Char Kway Teow</h5>
+            <span class="badge bg-info text-dark mb-2">Chinese Cuisine</span>
+            <p class="card-text">Stir-fried flat rice noodles with prawns, eggs, and Chinese sausage.</p>
+            <p class="text-warning mb-0">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              <i class="bi bi-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submit Review -->
+  <section class="submit-review-section py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Submit Your Review</h2>
+      <form id="reviewForm" class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="userName" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="itemName" placeholder="Food Item Name" required>
+        </div>
+        <div class="col-8">
+          <textarea class="form-control" id="reviewText" rows="3" placeholder="Your Review" required></textarea>
+        </div>
+        <div class="col-8 text-center">
+          <label for="rating" class="form-label fw-bold">Rating:</label>
+          <select class="form-select w-auto d-inline-block" id="rating" required>
+            <option value="">Select Rating</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary btn-lg">Submit Review</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- User Reviews -->
+  <section class="user-reviews-section py-5 container">
+    <h2 class="fw-bold mb-4 text-center">User Reviews</h2>
+    <div class="row g-4" id="userReviews">
+      <!-- User reviews dynamically appear here -->
+    </div>
+  </section>
+
+  <!-- Website Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <img src="../images/jombitelogo.png" alt="JomBite Logo" class="footer-logo">
+      <p>&copy; 2025 JomBite. All rights reserved.</p>
+      <nav class="footer-links" role="navigation" aria-label="Footer Navigation">
+        <a href="../html/about.html">About</a>
+        <a href="../html/about.html">Contact</a>
+        <a href="../html/about.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/review.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+
+</html>

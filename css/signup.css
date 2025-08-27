@@ -1,0 +1,24 @@
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+.signup-box {
+  max-width: 400px;
+  margin: auto;
+}
+
+.signup-image img {
+  object-fit: cover;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  cursor: pointer;
+  color: #666;
+}

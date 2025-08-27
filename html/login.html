@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JomBite - Login</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mainpage.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="icon" type="image/x-icon" href="../images/fff.ico">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="mainpageHeader">
+    <nav class="navbar navbar-expand-lg" style="background-color:#701705; min-height:80px;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Mobile logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="../images/jombitelogo.png" alt="JomBite Logo" width="100px" height="100px" class="rounded-circle">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="w-100 d-lg-flex justify-content-between align-items-center">
+
+            <!-- Left navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/bestfood2025.html">Street Food
+                  2025</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/gaouritefood.html">Most
+                  Favourite</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/ranking.html">Rankings</a></li>
+
+              <!-- Reviews dropdown -->
+              <li class="nav-item mx-lg-3 dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                  <li><a class="dropdown-item" href="../html/restaurant-review.html">Restaurant Reviews</a></li>
+                  <li><a class="dropdown-item" href="../html/food-review.html">Food Reviews</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Center logo -->
+            <a class="navbar-brand d-none d-lg-block" href="../html/mainpage.html">
+              <img src="../images/jombitelogo.png" alt="JomBite Logo" width="120px" height="120px"
+                style="margin-top:4vw;" class="rounded-circle">
+            </a>
+
+            <!-- Right navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/foodblog.html">Food Blogs</a>
+              </li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/promotional.html">Miscellaneous
+                  Promotion</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/about.html">About Us</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/login.html"></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Login Section -->
+  <div class="container-fluid login-container">
+    <div class="row g-0 shadow-lg rounded overflow-hidden">
+
+      <!-- Left Image -->
+      <div class="col-md-6 d-none d-md-block login-image">
+        <img src="../images/login-side.jpg" alt="Login" class="img-fluid h-100 w-100">
+      </div>
+
+      <!-- Right Form -->
+      <div class="col-md-6 bg-white p-4 d-flex align-items-center">
+        <div class="login-box w-100">
+          <h3 class="text-center mb-4"><b>Login to Your Account</b></h3>
+          <form id="loginForm">
+
+            <!-- Username -->
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3 position-relative">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+              <span class="toggle-password" onclick="togglePassword('password', this)">
+                <i class="bi bi-eye"></i>
+              </span>
+            </div>
+
+            <!-- Remember Me -->
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember Me</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+            <p class="text-center">If you don't have an account,
+              <a href="signup.html">Sign up now!</a>
+            </p>
+          </form>
+          <div id="loginMessage" class="mt-3 text-center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/login.js"></script>
+  <script>
+    // Password toggle
+    function togglePassword(fieldId, iconElement) {
+      const field = document.getElementById(fieldId);
+      const icon = iconElement.querySelector("i");
+      if (field.type === "password") {
+        field.type = "text";
+        icon.classList.replace("bi-eye", "bi-eye-slash");
+      } else {
+        field.type = "password";
+        icon.classList.replace("bi-eye-slash", "bi-eye");
+      }
+    }
+  </script>
+
+  <!-- Website Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <img src="../images/jombitelogo.png" alt="JomBite Logo" class="footer-logo">
+      <p>&copy; 2025 JomBite. All rights reserved.</p>
+      <nav class="footer-links" role="navigation" aria-label="Footer Navigation">
+        <a href="../html/about.html">About</a>
+        <a href="../html/about.html">Contact</a>
+        <a href="../html/about.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/auth.js"></script>
+  
+</body>
+
+</html>

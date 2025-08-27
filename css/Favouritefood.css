@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/backgroundfavouritefood.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.favourite-title {
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn-outline-light {
+  border-width: 2px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: black;
+}
+
+.food-heading {
+  color: white;
+  font-family: "Playwrite CA", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.food-card img.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.food-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+}
+
+.food-description {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 5px;
+}
+
+.food-card:hover .food-description {
+  max-height: 150px;
+  opacity: 1;
+}

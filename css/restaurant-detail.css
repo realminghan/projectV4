@@ -1,0 +1,267 @@
+/* Hero Section Responsive */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 50vh;
+    padding: 2rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero-section>div {
+    z-index: 2;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p.lead {
+    font-size: 1rem;
+  }
+
+  .hero-section .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p.lead {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.custom-navbar {
+  background-color: #701705;
+  min-height: 80px;
+}
+
+.site-footer {
+  background: #701705;
+  color: white;
+}
+
+.site-footer .footer-links a {
+  text-decoration: none;
+}
+
+/* Restaurant Info responsive fix */
+.restaurant-info {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.restaurant-info img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.restaurant-details {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+/* Gallery already responsive with auto-fit */
+.food-gallery {
+  margin-top: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-caption,
+.gallery-item:active .gallery-caption {
+  opacity: 1;
+}
+
+
+/* ✅ Map scaling */
+.map-container {
+  margin-top: 40px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 575px) {
+  .map {
+    height: 250px;
+  }
+}
+
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#modalImage {
+  width: 90vw;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 2100;
+}
+
+.close:hover {
+  color: #f00;
+}
+
+
+/* General Typography */
+body {
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.restaurant-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #b22222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  border-bottom: 2px solid #b22222;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.btn-danger {
+  background-color: #690000 !important;
+  border-color: #000000 !important;
+  color: white !important;
+}
+
+.restaurant-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.restaurant-header p {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+/* Main container overlay */
+main.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Gallery image styling */
+.food-gallery .gallery-item img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Elegant title */
+.top-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #701705;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 575px) {
+  .top-title {
+    font-size: 2rem;
+  }
+}

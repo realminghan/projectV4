@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JomBite - Favourite Food</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+CA&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mainpage.css">
+  <link rel="stylesheet" href="../css/Favouritefood.css">
+  <link rel="stylesheet" href="../html/StreetFood2025.html">
+  <link rel="icon" type="image/x-icon" href="../images/fff.ico">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="mainpageHeader">
+    <nav class="navbar navbar-expand-lg" style="background-color:#701705; min-height:80px;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Mobile logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="../images/jombitelogo.png" alt="JomBite Logo" width="100px" height="100px" class="rounded-circle">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="w-100 d-lg-flex justify-content-between align-items-center">
+
+            <!-- Left navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/bestfood2025.html">Street Food
+                  2025</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/gaouritefood.html">Most
+                  Favourite</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/ranking.html">Rankings</a></li>
+
+              <!-- Reviews dropdown -->
+              <li class="nav-item mx-lg-3 dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                  <li><a class="dropdown-item" href="../html/restaurant-review.html">Restaurant Reviews</a></li>
+                  <li><a class="dropdown-item" href="../html/food-review.html">Food Reviews</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Center logo -->
+            <a class="navbar-brand d-none d-lg-block" href="../html/mainpage.html">
+              <img src="../images/jombitelogo.png" alt="JomBite Logo" width="120px" height="120px"
+                style="margin-top:4vw;" class="rounded-circle">
+            </a>
+
+            <!-- Right navigation -->
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/foodblog.html">Food Blogs</a>
+              </li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/promotional.html">Miscellaneous
+                  Promotion</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/about.html">About Us</a></li>
+              <li class="nav-item mx-lg-3"><a class="nav-link text-white" href="../html/login.html"></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4 favourite-title">Favourite Food</h2>
+
+    <!-- Filter Buttons -->
+    <div class="d-flex justify-content-center gap-3 mb-4">
+      <button class="btn btn-outline-light" onclick="filterFood('all')">All</button>
+      <button class="btn btn-outline-light" onclick="filterFood('rice')">Rice</button>
+      <button class="btn btn-outline-light" onclick="filterFood('noodles')">Noodles</button>
+      <button class="btn btn-outline-light" onclick="filterFood('desserts')">Desserts</button>
+      <button class="btn btn-outline-light" onclick="filterFood('snacks')">Snacks</button>
+    </div>
+  </div>
+
+
+  <div class="row g-4">
+
+    <div class="row g-4">
+
+      <!-- Rice -->
+      <h3 class="mb-4 food-heading rice">🍚 Rice Dishes</h3>
+      <div class="col-md-3 food-item rice">
+        <div class="card food-card">
+          <img src="../images/nasikerabu.jpg" class="card-img-top" alt="Nasi Kerabu">
+          <div class="card-body text-center">
+            <h5 class="card-title">Nasi Kerabu</h5>
+            <div class="food-description">
+              Nasi Kerabu is a Malaysian rice dish featuring blue-colored rice, fresh herbs, and various
+              accompaniments like fried fish, salted egg, and sambal.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item rice">
+        <div class="card food-card rice">
+          <img src="../images/nasikandar.jpg" class="card-img-top" alt="Nasi Kandar">
+          <div class="card-body text-center">
+            <h5 class="card-title">Nasi Kandar</h5>
+            <div class="food-description">Nasi Kandar is a Malaysian dish of steamed rice served with a variety of
+              curries and side dishes. It originated from Penang and is known for its flavorful curries.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item rice">
+        <div class="card food-card rice">
+          <img src="../images/hainanesechickenrice.webp" class="card-img-top" alt="Hainanese Chicken Rice">
+          <div class="card-body text-center">
+            <h5 class="card-title">Hainanese Chicken Rice</h5>
+            <div class="food-description">Hainanese Chicken Rice is a fragrant dish consisting of poached chicken and
+              seasoned rice, served with chili sauce and garlic paste. It is a beloved dish across Malaysia and
+              Singapore.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item rice">
+        <div class="card food-card rice">
+          <img src="../images/nasilemakfav.jpeg" class="card-img-top" alt="Nasi Lemak">
+          <div class="card-body text-center">
+            <h5 class="card-title">Nasi Lemak</h5>
+            <div class="food-description">Nasi Lemak is Malaysia’s national dish made with coconut milk rice,
+              anchovies, peanuts, boiled egg, cucumber, and sambal. It is usually eaten for breakfast but enjoyed any
+              time of day.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noodles -->
+      <h3 class="mb-4 food-heading noodles">🍜 Noodles</h3>
+      <div class="col-md-3 food-item noodles">
+        <div class="card food-card">
+          <img src="../images/hokkienmeefav.jpg" class="card-img-top" alt="Hokkien Mee">
+          <div class="card-body text-center">
+            <h5 class="card-title">Hokkien Mee</h5>
+            <div class="food-description">Hokkien Mee is a stir-fried noodle dish popular in Malaysia, made with
+              yellow noodles, prawns, squid, pork, and a rich dark soy sauce.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item noodles">
+        <div class="card food-card noodles">
+          <img src="../images/assamlaksafav.jpg" class="card-img-top" alt="Assam Laksa">
+          <div class="card-body text-center">
+            <h5 class="card-title">Assam Laksa</h5>
+            <div class="food-description">Assam Laksa is a tangy and spicy noodle soup from Penang, made with mackerel
+              fish, tamarind, and served with thick rice noodles and fresh herbs.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item noodles">
+        <div class="card food-card noodles">
+          <img src="../images/prawnmee.webp" class="card-img-top" alt="Prawn Mee">
+          <div class="card-body text-center">
+            <h5 class="card-title">Prawn Mee</h5>
+            <div class="food-description">Prawn Mee is a flavorful noodle soup made with prawn stock, noodles, bean
+              sprouts, and topped with prawns and pork slices. It is popular in Malaysia and Singapore.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item noodles">
+        <div class="card food-card noodles">
+          <img src="../images/charkueyteowfav.jpg" class="card-img-top" alt="Char Kuey Teow">
+          <div class="card-body text-center">
+            <h5 class="card-title">Char Kuey Teow</h5>
+            <div class="food-description">Char Kuey Teow is a stir-fried flat rice noodle dish with prawns, Chinese
+              sausage, eggs, bean sprouts, and soy sauce. Famous for its smoky 'wok hei' flavor.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <h3 class="mb-4 food-heading desserts">🍨 Desserts</h3>
+      <div class="col-md-3 food-item desserts">
+        <div class="card food-card">
+          <img src="../images/abcicekacang.jpg" class="card-img-top" alt="ABC Dessert">
+          <div class="card-body text-center">
+            <h5 class="card-title">ABC Dessert</h5>
+            <div class="food-description">ABC (Ais Batu Campur) is a Malaysian shaved ice dessert with sweet syrup,
+              red beans, jelly, corn, and condensed milk. Refreshing and colorful.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item desserts">
+        <div class="card food-card desserts">
+          <img src="../images/pisanggoreng.jpg" class="card-img-top" alt="Pisang Goreng">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pisang Goreng</h5>
+            <div class="food-description">Pisang Goreng is a popular Malaysian snack made from deep-fried banana
+              fritters, often served with sugar or chocolate.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item desserts">
+        <div class="card food-card desserts">
+          <img src="../images/kuihlapis.jpg" class="card-img-top" alt="Kuih Lapis">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kuih Lapis</h5>
+            <div class="food-description">Kuih Lapis is a colorful Malaysian layered steamed cake made with rice
+              flour, coconut milk, and sugar. It’s soft, sweet, and chewy.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item desserts">
+        <div class="card food-card desserts">
+          <img src="../images/cendolfav.jpg" class="card-img-top" alt="Cendol">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cendol</h5>
+            <div class="food-description">Cendol is a traditional Malaysian dessert of shaved ice, coconut milk, green
+              rice flour jelly, and palm sugar syrup. Refreshing and sweet.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snacks -->
+      <h3 class="mb-4 food-heading snacks">🍟 Snacks</h3>
+      <div class="col-md-3 food-item snacks">
+        <div class="card food-card">
+          <img src="../images/rotitissuetwintower.jpeg" class="card-img-top" alt="Roti Tissue">
+          <div class="card-body text-center">
+            <h5 class="card-title">Roti Tissue Twin Tower</h5>
+            <div class="food-description">Roti Tissue is a thin, crispy Malaysian flatbread dessert, often served with
+              condensed milk or sugar. Twin Tower refers to serving two stacked pieces.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item snacks">
+        <div class="card food-card snacks">
+          <img src="../images/ramlyburgerfav.jpg" class="card-img-top" alt="Ramly Burger">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ramly Burger</h5>
+            <div class="food-description">Ramly Burger is a famous Malaysian burger, often fried with an egg and
+              wrapped in a special sauce, sold at street food stalls.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item snacks">
+        <div class="card food-card snacks">
+          <img src="../images/keropoklekor.jpg" class="card-img-top" alt="Keropok Lekor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Keropok Lekor</h5>
+            <div class="food-description">Keropok Lekor is a traditional Malaysian fish snack made from fish and sago
+              flour, usually deep-fried or boiled and served with spicy sauce.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 food-item snacks">
+        <div class="card food-card snacks">
+          <img src="../images/mameemonster.jpg" class="card-img-top" alt="Mamee Monster">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mamee Monster</h5>
+            <div class="food-description">Mamee Monster is a fun Malaysian snack of crispy noodle-like sticks and
+              seasoning powder, usually eaten straight from the packet.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Website Footer -->
+      <footer class="site-footer">
+        <div class="footer-content">
+          <img src="../images/jombitelogo.png" alt="JomBite Logo" class="footer-logo">
+          <p>&copy; 2025 JomBite. All rights reserved.</p>
+          <nav class="footer-links" role="navigation" aria-label="Footer Navigation">
+            <a href="../html/about.html">About</a>
+            <a href="../html/about.html">Contact</a>
+            <a href="../html/about.html">Privacy</a>
+          </nav>
+        </div>
+      </footer>
+
+
+      <script>
+        function filterFood(category) {
+          let items = document.querySelectorAll(".food-item, .food-heading");
+          items.forEach(item => {
+            if (category === "all") {
+              item.style.display = "block";
+            } else {
+              if (item.classList.contains(category)) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            }
+          });
+        }
+
+        // Show all on load
+        filterFood("all");
+
+      </script>
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      <script src="../js/auth.js"></script>
+</body>
+
+</html>
