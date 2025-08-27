@@ -1,0 +1,64 @@
+# Workflow for deploying static content (HTML, CSS, JS, images, videos) to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Deploy when pushing to the main branch
+  push:
+    branches: ["main"]
+
+  # Allow manual deployment from the Actions tab
+  workflow_dispatch:
+
+# Permissions for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent overlapping deployments
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Setup GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Step 3: Prepare deployment folder
+      - name: Prepare dist folder
+        run: |
+          mkdir dist
+          
+          # Make mainpage.html the homepage
+          cp html/mainpage.html dist/index.html
+          
+          # Copy all HTML files so they remain accessible
+          cp -r html/* dist/
+          
+          # Copy other asset folders if they exist
+          [ -d css ] && cp -r css dist/
+          [ -d js ] && cp -r js dist/
+          [ -d images ] && cp -r images dist/
+          [ -d videos ] && cp -r videos dist/
+
+      # Step 4: Upload site artifacts
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
